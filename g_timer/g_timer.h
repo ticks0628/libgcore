@@ -21,6 +21,6 @@ struct GTIMER_STRUCT{
 int g_timer_init();
 int g_timer_stop(int num);
 int g_timer_start(int num);
-int g_timer_set( int num, time_t sec, suseconds_t, char *name, FP func, void *arg, int repeat);
+int g_timer_set( int num, time_t sec, suseconds_t nsec, char *name, FP func, void *arg, int repeat);
 extern struct GTIMER_STRUCT timerStruct[ GTIMER_MAX ];
 #endif
