@@ -43,14 +43,14 @@ struct GTIMER_STRUCT gTimerStruct[] = {
 //-------------------------------------
 
 void print_data() {
-    for (int i = 0; i < GTIMER_MAX / sizeof(gTimerStruct[0]); ++i) {
-        printf("Enum: %d, Name: %s, Value: %d\n", i, gTimerStruct[i].name, gTimerStruct[i].bRepeat);
-    }
+	for (int i = 0; i < GTIMER_MAX / sizeof(gTimerStruct[0]); ++i) {
+		printf("Enum: %d, Name: %s, Value: %d\n", i, gTimerStruct[i].name, gTimerStruct[i].bRepeat);
+	}
 }
 
 int main() {
-    print_data();
-        printf("Enum: %d, Name: %s, Value: %d\n", eCHK_OSD_REFLUSH, gTimerStruct[eCHK_OSD_REFLUSH].name, gTimerStruct[eCHK_OSD_REFLUSH].bRepeat);
-    return 0;
+	print_data();
+	printf("Enum: %d, Name: %s, Value: %d\n", eCHK_OSD_REFLUSH, gTimerStruct[eCHK_OSD_REFLUSH].name, gTimerStruct[eCHK_OSD_REFLUSH].bRepeat);
+	return 0;
 }
 
